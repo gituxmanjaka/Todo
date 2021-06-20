@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo avec javascript pure</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Todo</h1>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="todo-recherche">
+            <input type="text" id="recherche" placeholder="Rechercher une ou des taches">
+        </section>
+
+        <section class="todo-list">
+            <ul id="list">
+                <li class="list-item">
+                    <h2>Todo 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="group">
+                        <button>Terminer</button>
+                        <button class="delete">Supprimer</button>
+                    </div>
+                </li>
+                <li class="list-item termined" draggable="true">
+                    <h2>Todo 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="group">
+                        <button hidden>Terminer</button>
+                        <button class="delete">Supprimer</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h2>Todo 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="group">
+                        <button>Terminer</button>
+                        <button class="delete">Supprimer</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="todo-form">
+            <form action="#">
+                <h1>Créer une nouvelle tache</h1>
+                <div class="control-group">
+                    <label for="todo-title">Titre</label>
+                    <input type="text" id="todo-title">
+                </div>
+                <div class="control-group">
+                    <label for="todo-description">Déscription</label>
+                    <textarea id="todo-description"></textarea>
+                </div>
+                <button>Enregistrer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Toky Mahefarison ©</h4>
+    </footer>
+</body>
+</html>
